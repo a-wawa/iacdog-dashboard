@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: white;
+}
+
+.aww-bg-gradient {
+  @apply bg-gradient-to-tr from-yellow-500 to-orange-600 text-white;
+}
+
+.aww-btn {
+  @apply aww-bg-gradient font-bold px-3 py-2 rounded text-center align-middle;
+}
